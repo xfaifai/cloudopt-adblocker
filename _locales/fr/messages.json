@@ -241,10 +241,10 @@
     "optionBookmarkSearchContent": {
         "message": "Vous récupérez automatiquement les signets et les intégrez dans les résultats de recherche lorsque vous effectuez une recherche sur un moteur de recherche."
     },
-    "optionMouseRightSearchTitle": {
+    "optionRightClickSearchTitle": {
         "message": "右键搜索"
     },
-    "optionMouseRightSearchContent": {
+    "optionRightClickSearchContent": {
         "message": "您在浏览网页鼠标右键可进行快速搜索。"
     },
     "optionDataCollectionTitle": {

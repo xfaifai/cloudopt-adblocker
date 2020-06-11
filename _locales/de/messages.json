@@ -241,10 +241,10 @@
     "optionBookmarkSearchContent": {
         "message": "Sie rufen automatisch Lesezeichen ab und binden sie in Suchergebnisse ein, wenn Sie in einer Suchmaschine suchen."
     },
-    "optionMouseRightSearchTitle": {
+    "optionRightClickSearchTitle": {
         "message": "右键搜索"
     },
-    "optionMouseRightSearchContent": {
+    "optionRightClickSearchContent": {
         "message": "您在浏览网页鼠标右键可进行快速搜索。"
     },
     "optionDataCollectionTitle": {

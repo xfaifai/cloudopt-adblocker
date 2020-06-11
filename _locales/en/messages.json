@@ -241,10 +241,10 @@
     "optionBookmarkSearchContent": {
         "message": "Automatically helps you retrieve bookmarks and embed them in search results when searching on a search engine."
     },
-    "optionMouseRightSearchTitle": {
+    "optionRightClickSearchTitle": {
         "message": "右键搜索"
     },
-    "optionMouseRightSearchContent": {
+    "optionRightClickSearchContent": {
         "message": "您在浏览网页鼠标右键可进行快速搜索。"
     },
     "optionDataCollectionTitle": {

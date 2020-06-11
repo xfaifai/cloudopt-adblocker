@@ -241,11 +241,11 @@
     "optionBookmarkSearchContent": {
         "message": "您在搜索引擎搜索時自動幫助您檢索書籤並嵌入搜索結果中。"
     },
-    "optionMouseRightSearchTitle": {
-        "message": "右键搜索"
+    "optionRightClickSearchTitle": {
+        "message": "右鍵搜索（BETA）"
     },
-    "optionMouseRightSearchContent": {
-        "message": "您在浏览网页鼠标右键可进行快速搜索。"
+    "optionRightClickSearchContent": {
+        "message": "您在瀏覽網頁時，選中文字鼠標右擊可快速使用搜索引擎。"
     },
     "optionDataCollectionTitle": {
         "message": "用戶體驗改進計劃"
