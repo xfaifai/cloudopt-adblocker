@@ -24,6 +24,13 @@ export default class AuxiliaryPages implements IBaseHTMLPages {
                 on: config.labBookmarkSearch,
             },
             {
+                title: i18n.get('optionMouseRightSearchTitle'),
+                key: "mouseRightSearch",
+                content: i18n.get('optionMouseRightSearchContent'),
+                icon: getIconPath("icons-rightclicksearch"),
+                on: config.mouseRightSearch,
+            },
+            {
                 title: i18n.get('optionDataCollectionTitle'),
                 key: "dataCollection",
                 i18n: 'optionDataCollectionContent',

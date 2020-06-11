@@ -241,6 +241,12 @@
     "optionBookmarkSearchContent": {
         "message": "検索エンジンで検索すると、ブックマークを自動的に取得して検索結果に埋め込むことができます。"
     },
+    "optionMouseRightSearchTitle": {
+        "message": "右键搜索"
+    },
+    "optionMouseRightSearchContent": {
+        "message": "您在浏览网页鼠标右键可进行快速搜索。"
+    },
     "optionDataCollectionTitle": {
         "message": "ユーザーエクスペリエンス向上プログラム"
     },

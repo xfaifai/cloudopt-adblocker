@@ -18,6 +18,7 @@ export class Config {
     public blockList: string[]
     public allowListAds: string[]
     public labBookmarkSearch: boolean
+    public mouseRightSearch: boolean
     public labSafeTips: boolean
     public labKeyboard: boolean
     public memoryOptimize: boolean
@@ -41,6 +42,7 @@ let configObject: Config = {
     blockList: [],
     allowListAds: [],
     labBookmarkSearch: true,
+    mouseRightSearch: false,
     labSafeTips: true,
     labKeyboard: false,
     memoryOptimize: false,

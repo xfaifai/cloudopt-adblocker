@@ -12,6 +12,22 @@ chrome.contextMenus.create({
     onclick: () => undefined,
 })
 
+chrome.contextMenus.create( {
+    title: 'Cloudopt Search',
+    parentId: 'cloudopt',
+    contexts: ['selection'],
+    onclick: async (info) => {
+        // https://s.cloudopt.net/search?q=%E4%BC%A4%E5%BF%83
+        window.open('https://s.cloudopt.net/search?q='+info.selectionText)
+    },
+})
+
+// chrome.contextMenus.create( {
+//     title: 'Cloudopt Search',
+//     parentId: 'cloudopt',
+//     contexts: ['separator'],
+// })
+
 chrome.contextMenus.create({
     title: i18n.get('contextMenus1'),
     parentId: 'cloudopt',

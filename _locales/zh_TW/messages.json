@@ -241,6 +241,12 @@
     "optionBookmarkSearchContent": {
         "message": "您在搜索引擎搜索時自動幫助您檢索書籤並嵌入搜索結果中。"
     },
+    "optionMouseRightSearchTitle": {
+        "message": "右键搜索"
+    },
+    "optionMouseRightSearchContent": {
+        "message": "您在浏览网页鼠标右键可进行快速搜索。"
+    },
     "optionDataCollectionTitle": {
         "message": "用戶體驗改進計劃"
     },
