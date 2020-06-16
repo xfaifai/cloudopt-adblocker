@@ -10,41 +10,46 @@ chrome.contextMenus.create({
     title: 'Cloudopt',
     contexts: ['all'],
     onclick: () => undefined,
-})
+}),
 
-chrome.contextMenus.create( {
-    title: 'Search by Cloudopt',
-    parentId: 'cloudopt',
-    contexts: ['selection'],
-    onclick: async (info) => {
-        window.open(`https://s.cloudopt.net/search?q=${info.selectionText}`)
-    },
-})
+(async () => {
+    const config = await coreConfig.get()
 
-chrome.contextMenus.create( {
-    title: 'Search by Google',
-    parentId: 'cloudopt',
-    contexts: ['selection'],
-    onclick: async (info) => {
-        window.open(`https://www.google.com.hk/#&q=${info.selectionText}&ie=utf-8`)
-    },
-})
+    if (!config.rightClickSearch) { return }
 
-chrome.contextMenus.create( {
-    title: 'Search by Baidu',
-    parentId: 'cloudopt',
-    contexts: ['selection'],
-    onclick: async (info) => {
-        window.open(`https://www.baidu.com/s?wd=${info.selectionText}`)
-    },
-})
+    const searchEngines = [
+        {
+            name: 'Cloudopt',
+            url: 'https://s.cloudopt.net/search?q={{word}}'
+        },
+        {
+            name: 'Google',
+            url: 'https://www.google.com.hk/#&q={{word}}&ie=utf-8'
+        },
+        {
+            name: 'Baidu',
+            url: 'https://www.baidu.com/s?wd={{word}}'
+        }
+    ]
 
-chrome.contextMenus.create( {
-    title: '————————————',
-    parentId: 'cloudopt',
-    contexts: ['selection'],
-    enabled: false,
-})
+    for (let searchEngine of searchEngines) {
+        chrome.contextMenus.create( {
+            title: `Search by ${searchEngine.name}`,
+            parentId: 'cloudopt',
+            contexts: ['selection'],
+            onclick: async (info) => {
+                window.open(searchEngine.url.replace('{{word}}',info.selectionText))
+            },
+        })
+    }
+
+    chrome.contextMenus.create( {
+        title: '————————————',
+        parentId: 'cloudopt',
+        contexts: ['selection'],
+        enabled: false,
+    })
+})()
 
 chrome.contextMenus.create({
     title: i18n.get('contextMenus1'),
